@@ -29,6 +29,6 @@ in CI.
 
 ## Exercise goal
 
-Create a branch, make a small change, and open a pull request. The workflow
+Create a branch, make a "small" change , and open a pull request. The workflow
 should run the tests and build. Then try breaking a task-list function to see
 the test check fail, fix it, and push again to see the check pass.
