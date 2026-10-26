@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6fb" />
+    <title>Little List</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="task-card" aria-labelledby="page-title">
+        <p class="eyebrow">A tiny task list</p>
+        <h1 id="page-title">Little List</h1>
+        <p class="intro">Add a task, then check it off when it’s done.</p>
+
+        <form id="task-form" class="task-form">
+          <label class="visually-hidden" for="task-input">New task</label>
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            placeholder="e.g. Water the plants"
+            autocomplete="off"
+          />
+          <button type="submit">Add task</button>
+        </form>
+
+        <p id="task-summary" class="task-summary" aria-live="polite"></p>
+        <ul id="task-list" class="task-list" aria-label="Tasks"></ul>
+        <p id="empty-message" class="empty-message">Your list is clear. Add a task to get started.</p>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
